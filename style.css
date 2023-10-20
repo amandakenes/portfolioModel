@@ -4,17 +4,21 @@
     box-sizing: border-box;
   }
 
+  body {
+    background-color: rgba(0, 0, 0, 0.842);
+  }
+
   .header {
     position: sticky;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 15px 5px 15px 15px;
     height: 90px;
-    cursor: pointer;
     background-color: rgb(218, 190, 154);
     border-bottom: 12px solid burlywood;;
+    gap: 60px;
   }
 
   .header ul {
@@ -26,6 +30,7 @@
     text-transform: uppercase;
     gap: 70px;
     letter-spacing: 3px;
+    cursor: pointer;
   }
 
   .header ul li {
@@ -40,14 +45,40 @@
     text-decoration: underline white;
   }
 
+
+  .btn {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-left: 200px;
+    width: 300px;
+  } 
+
+  .btn button {
+    
+    width: 60px;
+    height: 30px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+    font-weight: bold;
+    background-color: rgb(247, 220, 181);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn button:hover {
+    background-color: burlywood;
+    color: white;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
     margin: 15px 80px;
-    gap: 5px;
   }
 
   .content-img img {
@@ -70,5 +101,13 @@
   .content-text h1 {
     font-size: 60px;
     color: rgb(185, 139, 77);
+    font-weight: bold;
+    text-decoration: underline;
   }
   
+  .content-text p {
+    text-align: justify;
+    font-size: 15px;
+    padding-bottom: 18px;
+    color: white;
+  }
