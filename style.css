@@ -131,3 +131,13 @@
     padding-bottom: 18px;
     color: white;
   }
+
+  .footer {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    text-align: end;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-right: 10px;
+    color: rgb(175, 137, 91);
+  }
